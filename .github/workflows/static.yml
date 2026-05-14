@@ -46,5 +46,5 @@ jobs:
         uses: actions/deploy-pages@v5
       - name: check files
         run: |
-          ls la
+          ls -la
           ls -la survival
