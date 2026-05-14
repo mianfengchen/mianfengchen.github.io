@@ -1,3 +1,4 @@
 [submodule "survival"]
 	path = survival
 	url = https://github.com/mianfengchen/survival.git
+	branch = main
