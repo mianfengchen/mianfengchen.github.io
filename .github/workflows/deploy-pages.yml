@@ -35,10 +35,12 @@ jobs:
         run: |
           mkdir -p _site
           rsync -av --delete \
+            --exclude '.git' \
             --exclude '.git/' \
             --exclude '.github/' \
             --exclude '_site/' \
             ./ ./_site/
+          find ./_site -name .git -prune -exec rm -rf {} +
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
