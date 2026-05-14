@@ -37,6 +37,7 @@ jobs:
           rsync -av --delete \
             --exclude '.git' \
             --exclude '.git/' \
+            --exclude '.gitmodules' \
             --exclude '.github/' \
             --exclude '_site/' \
             ./ ./_site/
